@@ -148,7 +148,7 @@ function sendEmail() {
     }).showToast();
 
     // Send email using EmailJS
-    emailjs.send("service_iqxvxwh", "template_iqxvxwh", {
+    return emailjs.send("service_iqxvxwh", "template_iqxvxwh", {
         from_name: fullName.value,
         from_email: email.value,
         to_name: "Sukhmandeep",
@@ -192,11 +192,25 @@ function sendEmail() {
     );
 }
 
-form.addEventListener("submit", (e) => {
+// Contact form submit handling
+document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
-    sendEmail();
+    const submitBtn = this.querySelector('.submit-btn');
+    const submitIcon = submitBtn.querySelector('i');
+    
+    // Add loading state
+    submitBtn.classList.add('loading');
+    submitIcon.classList.remove('bx-send');
+    submitIcon.classList.add('bx-loader-alt');
+    
+    // Your existing email sending code here
+    sendEmail().then(() => {
+        // Remove loading state after sending
+        submitBtn.classList.remove('loading');
+        submitIcon.classList.remove('bx-loader-alt');
+        submitIcon.classList.add('bx-send');
+    });
 });
-
 
 document.getElementById('downloadCv').addEventListener('click', function(event) {
     event.preventDefault(); 

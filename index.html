@@ -54,9 +54,15 @@
 
         </div>
         <div class="home-sci">
-            <a href="YOUR_LINKEDIN_URL" target="_blank"><i class='bx bxl-linkedin'></i></a>
-            <a href="YOUR_GITHUB_URL" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="YOUR_INSTAGRAM_URL" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="YOUR_LINKEDIN_URL" target="_blank" title="LinkedIn">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="YOUR_GITHUB_URL" target="_blank" title="GitHub">
+                <i class='bx bxl-github'></i>
+            </a>
+            <a href="mailto:singhsukhmandeep76@gmail.com" title="Email">
+                <i class='bx bx-envelope'></i>
+            </a>
             <span class="animate" style="--i:6;"></span>
         </div>
 
@@ -116,8 +122,8 @@
                     </div>
                     <div class="bar">
                         <div class="info">
-                            <span>Java</span>
-                            <span>80%</span>
+                            <span>ReactJS</span>
+                            <span>60%</span>
                         </div>
                         <div class="progress-line java"><span></span></div>
                     </div>
@@ -238,9 +244,22 @@
                 <div class="portfolio-layer">
                     <h4>E-commerce Shopping Platform</h4>
                     <p>Developed a scalable E-commerce platform for book selling using .NET and MVC, featuring advanced browsing, secure checkout, and payment processing.</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <div class="portfolio-tech">
+                        <span>ASP.NET</span>
+                        <span>C#</span>
+                        <span>MVC</span>
+                        <span>SQL Server</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" target="_blank" title="View Code">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
                 </div>
-                <span class="animate scroll" style="--i:2;"></span>
             </div>
 
             <div class="portfolio-box">
@@ -248,29 +267,66 @@
                 <div class="portfolio-layer">
                     <h4>National Park Information System</h4>
                     <p>Built a RESTful API-based system using ASP.NET Web API and Entity Framework for managing park information, attractions, and conservation efforts.</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <div class="portfolio-tech">
+                        <span>ASP.NET Web API</span>
+                        <span>Entity Framework</span>
+                        <span>C#</span>
+                        <span>SQL</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" target="_blank" title="View Code">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
                 </div>
-                <span class="animate scroll" style="--i:3;"></span>
             </div>
 
             <div class="portfolio-box">
-                <img src="https://cdn.pixabay.com/photo/2018/03/27/12/16/analytics-3265840_1280.jpg" alt="API Development">
+                <img src="https://cdn.pixabay.com/photo/2018/03/27/12/16/analytics-3265840_1280.jpg" alt="WhatsApp Integration">
                 <div class="portfolio-layer">
                     <h4>WhatsApp Integration Panel</h4>
                     <p>Developed a WhatsApp panel using MVC, C#, jQuery, and AJAX for API handling and CRUD operations with responsive design.</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <div class="portfolio-tech">
+                        <span>MVC</span>
+                        <span>C#</span>
+                        <span>jQuery</span>
+                        <span>AJAX</span>
+                        <span>API</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" target="_blank" title="View Code">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
                 </div>
-                <span class="animate scroll" style="--i:4;"></span>
             </div>
 
             <div class="portfolio-box">
-                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" alt="Windows Forms App">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/20/58/programming-1873854_1280.png" alt="Serial Port System">
                 <div class="portfolio-layer">
                     <h4>Serial Port Messaging System</h4>
                     <p>Windows Forms application in C# with serial port server-client messaging system, focusing on real-time data transmission and synchronization.</p>
-                    <a href="#" target="_blank"><i class='bx bx-link-external'></i></a>
+                    <div class="portfolio-tech">
+                        <span>C#</span>
+                        <span>Windows Forms</span>
+                        <span>Serial Port</span>
+                        <span>TCP/IP</span>
+                    </div>
+                    <div class="portfolio-links">
+                        <a href="#" target="_blank" title="View Code">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" target="_blank" title="Live Demo">
+                            <i class='bx bx-link-external'></i>
+                        </a>
+                    </div>
                 </div>
-                <span class="animate scroll" style="--i:5;"></span>
             </div>
         </div>
     </section>
@@ -281,43 +337,68 @@
 
         <form action="#">
             <div class="input-field">
-                <input type="text" placeholder="Your Name" id="name" class="item" autocomplete="off">
-                <span class="focus"></span>
+                <input type="text" id="name" required>
+                <label for="name">Your Name</label>
                 <span class="animate scroll" style="--i:3;"></span>
             </div>
 
             <div class="input-field">
-                <input type="email" placeholder="Your Email" id="email" class="item" autocomplete="off">
-                <span class="focus"></span>
+                <input type="email" id="email" required>
+                <label for="email">Your Email</label>
                 <span class="animate scroll" style="--i:4;"></span>
             </div>
 
             <div class="textarea-field">
-                <textarea id="message" cols="30" rows="10" placeholder="Your Message" class="item"
-                    autocomplete="off"></textarea>
-                <span class="focus"></span>
+                <textarea id="message" required></textarea>
+                <label for="message">Your Message</label>
                 <span class="animate scroll" style="--i:5;"></span>
             </div>
 
             <div class="btn-box btns">
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="submit-btn">
+                    <i class='bx bx-send'></i>
+                </button>
                 <span class="animate scroll" style="--i:6;"></span>
             </div>
         </form>
     </section>
 
-    <!--fOOTER-->
+    <!--Footer Section-->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Sukhmandeep | All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>Sukhmandeep Singh</h3>
+                <p>Full Stack Developer building innovative web solutions</p>
+                
+                <div class="footer-social">
+                    <a href="YOUR_LINKEDIN_URL" target="_blank" title="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="YOUR_GITHUB_URL" target="_blank" title="GitHub">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" title="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                </div>
+            </div>
 
-            <span class="animate scroll" style="--i:1;"></span>
+            <div class="footer-links">
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class='bx bx-map'></i> Chandigarh, India</p>
+                    <p><i class='bx bx-phone'></i> +91 6239004732</p>
+                    <p><i class='bx bx-envelope'></i> singhsukhmandeep76@gmail.com.com</p>
+                </div>
+            </div>
         </div>
 
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-
-            <span class="animate scroll" style="--i:3;"></span>
+        <div class="footer-bottom">
+            <p>© 2024. All rights reserved.</p>
+            <!-- <a href="#" class="footer-to-top">
+                <i class='bx bx-up-arrow-alt'></i>
+            </a> -->
         </div>
     </footer>
 
