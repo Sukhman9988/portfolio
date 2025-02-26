@@ -79,7 +79,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 7rem 9% 2rem;
 }
 .home{
     display: flex;
@@ -217,6 +217,8 @@ section{
     width: 170px;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
+    left: 9%;
 }
 .home-sci a{
     position: relative;
@@ -261,8 +263,8 @@ section{
     width: 45%;
     height: 100%;
     background: transparent;
-   
     transition: 2s;
+    z-index: 98;
 }
 .home-imgHover:hover{
     background: var(--bg-color);
@@ -271,18 +273,19 @@ section{
 
 .about{
     display: flex;
+    margin-top: 0;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     background: var(--second-bg-color);
-    padding-bottom: 6rem;
+    padding-bottom: 4rem;
 }
 
 .heading {
     position: relative;
     font-size: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -297,6 +300,7 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -2rem;
 }
 
 .about-img img{
@@ -332,7 +336,7 @@ span{
 .about-content p{
     position: relative;
     font-size: 1.6rem;
-    margin: 2rem 0 3rem;
+    margin: 1.5rem 0 2rem;
 }
 .btn-box.btns{
     display: inline-block;
